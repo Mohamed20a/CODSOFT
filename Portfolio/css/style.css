@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+#navbar{
+    background-color: #00296e;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+#navbar .nav-title{
+    padding: 35px;
+    font-family: 'motairah';
+}
+#navbar .menu{
+    font-size: 18px;
+    display: flex;
+    padding: 40px;
+    list-style: none;
+}
+.menu li{
+    margin-right: 35px;
+} 
+
+/* Home  */
+.home{
+    padding: 100px 0;
+    margin-top: 130px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    transition: all .3s ease-out;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    font-size: 20px;
+    transition: all .3s ease-out;
+}
+.container h2{
+    color: #00296e;
+}
+.home #home-title{
+    width: 40%;
+    animation: slideIn-left 1s ease-in-out forwards;
+    opacity: 0;
+}
+/* Home Title Animation */
+@keyframes slideIn-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#home-title h1{
+    font-family: math;
+}
+#home-title span{
+    color: #00296e;
+    font-family: 'motairah';
+}
+.home .container a{
+    text-decoration: none;
+    padding: 15px;
+    width: 9em;
+    background-color: #00296e;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all .3s ease-out;
+    text-align: center;
+}
+.home .container a:hover{
+    transform: scale(1.1);
+}
+
+.home .img{
+    animation: slideIn-right 1s ease-in-out forwards;
+    opacity: 0;
+}
+/* Image Animation */
+@keyframes slideIn-right {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Skills Section */
+.Skills{
+    background: #eaeaea;
+    padding: 110px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.Skills .line {
+    width: 8em;
+    background-color: rgb(16, 110, 190);
+    height: 3px;
+    margin-bottom: 2em;
+    align-self: center;
+}
+.Skills .skill-boxes{
+    display: flex;
+    gap: 30px;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.Skills .box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    transition:.5s all ease-out;
+}
+.Skills .box:hover{
+    transform: rotate(20deg);
+    background-color: #00296e;
+    color: #fff;
+}
+
+/* Projects Section */
+.project{
+    padding: 110px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.project .line {
+    width: 8em;
+    background-color: rgb(16, 110, 190);
+    height: 3px;
+    margin-bottom: 2em;
+    align-self: center;
+}
+.project .projects{
+    display: flex;
+    gap: 30px;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.project .box-project{
+    background-color: #eaeaea;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    transition:.5s all ease-out;
+}
+.project .box-project:hover{
+    transform: scale(1.1);
+}
+.project .project-title{
+    padding: 50px;
+}
+
+/* Resume Section */
+.resume{
+    margin: 5em 0;
+    background: #eaeaea;
+    padding: 90px 0;
+}
+.resume h2{
+    text-align: center
+}
+.resume .line {
+    width: 8em;
+    background-color: rgb(16, 110, 190);
+    height: 3px;
+    margin-bottom: 2em;
+    align-self: center;
+}
+.resume-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 17px;
+    width: 85vw;
+    flex-wrap: wrap;
+    align-self: center;
+}
+.resume-box .exper , .edu{
+    width: 45%;
+}
+.resume-box #comma{
+    color: #00296e;
+}
+.exper h3 , .edu h3{
+    color: #00296e;
+    font-size: 22px;
+}
+.exper p , .edu p{
+    margin: 2em 0;
+    font-family: monospace;
+}
+.resume .container a{
+    text-decoration: none;
+    padding: 15px;
+    width: 9em;
+    background-color: #8d8b8b;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all .3s ease-out;
+    text-align: center;
+}
+.resume .container a:hover{
+    background-color: #00296e;
+}
+/* Contact Section */
+.contact {
+    margin: 9em 0;
+}
+.contact .contact-box{
+    display: flex;
+    width: 75vw;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+.contact h2{
+    text-align: center
+}
+.contact .line {
+    width: 8em;
+    background-color: rgb(16, 110, 190);
+    height: 3px;
+    margin-bottom: 2em;
+    align-self: center;
+}
+.contact .map iframe{
+    width: 500px;
+    border-radius: 20px;
+    height: 350px;
+    border: 0;
+}
+.social ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.social ul li{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #000000ad;
+    transition: all .3s ease-out;
+}
+.social #icon{
+    color: #00296e;
+}
+.social .social-icon{
+    text-decoration: none;
+}
+.social .social-icon{
+    color: #000000ad;
+}
+.social .social-icon:hover{
+    color: #00296e;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 25px;
+    background-color: #00296e;
+    color: #fff;
+}
+
+/* Scroll Btn */
+.scrollBtn{
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00296e;
+    border-radius: 50% 50% 5px 5px;
+    font-size: 25px;
+    transition: .4s bottom ease-in-out;
+    cursor: pointer;
+    opacity: 0;
+}
+.scrollBtn.active{
+    bottom: 20px;
+    opacity: 1;
+}
