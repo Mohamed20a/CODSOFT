@@ -2,7 +2,7 @@ This repository contains the code for three exciting web development Projects at
 
 ## Task 1: Landing Page
 
-**Description**: Task 1 involved creating a Landing Page using HTML, CSS, and JavaScript.
+**Description**: Task 1 involved creating a Landing Page using HTML and CSS.
 
 **Features**:
 - Interactive and responsive design.
